@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/26" fx:controller="com.airis.bmikalkulator.bmiController">
+    <stylesheets>
+        <URL value="@/com/airis/bmikalkulator/bmiview.css" />
+    </stylesheets>
+   <children>
+      <VBox layoutX="167.0" layoutY="1.0" prefHeight="400.0" prefWidth="265.0">
+         <children>
+            <Label prefHeight="56.0" prefWidth="220.0" text="KALKULATOR BMI">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label prefHeight="20.0" prefWidth="118.0" text="Berat Badan (Kg)">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtBerat" />
+            <Label text="Tinggi Badan (m)">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtTinggi" />
+            <Button fx:id="btnHitung" mnemonicParsing="false" onAction="#hitungBmi" text="Hitung BMI">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="lblHasil" prefHeight="27.0" prefWidth="134.0" text="Hasil BMI">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
